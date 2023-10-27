@@ -1,6 +1,7 @@
 import Header from "@/components/home/Header";
 import Head from "next/head";
 import { Box, styled } from "@mui/material";
+import Content from "@/components/home/Content";
 
 export default function Home() {
   return (
@@ -16,14 +17,14 @@ export default function Home() {
       </Head>
       <Background>
         <Header />
+
+        <Content />
       </Background>
     </>
   );
 }
 
 const Background = styled(Box)`
-  height: 100vh;
-  width: 100vw;
   background-image: url("/images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
